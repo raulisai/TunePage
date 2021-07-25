@@ -1,0 +1,30 @@
+.SetingMainNote {
+    float: left;
+    font-family:"Tourney","Fuggles","Uchen";
+    color:rgba(64, 255, 64, 0.63);
+}
+.MainBoxTuner{
+    background-color:rgba(5, 3, 3, 0.877);
+    border: 1.5px solid;
+    border-color:green;
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    margin-left: -5%;
+    margin-bottom: -10%;
+
+
+}
+.Note {
+    font-size:6rem;
+ 
+
+}
+.OctavaOfNote {
+    font-size:5rem;
+   }
+   
+.KeyBlack {
+    font-size:4rem;
+   }
+   

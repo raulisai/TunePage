@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import "./css/Nota.css"
 
 class PrintNote extends React.Component {
   constructor(props) {
@@ -14,10 +15,10 @@ class PrintNote extends React.Component {
     return (
       <>
       <div className="MainBoxTuner">
-      <div className="NoteInLetters">
-      <h4 className="Note">F</h4>
-      <h5 className="OctavaOfNote">4</h5>
-      <span>#</span>
+      <div className="NoteInLetters m-5">
+      <h4 className="Note SetingMainNote">F</h4>
+      <h5 className="OctavaOfNote SetingMainNote">4</h5>
+      <span className="KeyBlack SetingMainNote">#</span>
       </div>
       </div>
 

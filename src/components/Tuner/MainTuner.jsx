@@ -7,10 +7,10 @@ import { connect } from "react-redux";
 import Nota from "./Nota"
 
 class MainTuner extends React.Component {
-    constructor(props, context) {
-        super(props, context);
-        
-    }
+    constructor(props) {
+        super(props);
+      }
+    
 
     render() {
         return (
