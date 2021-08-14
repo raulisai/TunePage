@@ -1,13 +1,18 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
-import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import "./css/Nota.css"
+
+
 
 class PrintNote extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  
+
+
 
 
 

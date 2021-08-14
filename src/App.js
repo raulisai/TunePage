@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import store from "./helpers/redux/store";
 
 import Tuner from "./components/Tuner/MainTuner"
+import Trastes from './components/TrastesGuitarra/Trastes';
 
 //Componentes
 
@@ -30,7 +31,7 @@ function App() {
     <Tuner />
     </div>
     <div className="col-9">
-    
+    <Trastes />
     </div>
     </div>
 

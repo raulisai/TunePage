@@ -1,10 +1,11 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
-import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 //componentes
 import Nota from "./Nota"
+
+//
 
 class MainTuner extends React.Component {
     constructor(props) {
@@ -32,3 +33,22 @@ const mapStateToProps = (state) =>  {
 }
 
 export default connect(mapStateToProps)(MainTuner);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
