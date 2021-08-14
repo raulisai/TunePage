@@ -108,6 +108,13 @@ frameCounter = 0
 
 e = bitCounter / findWaveLength(timeDomainData, window.globk * 24, window.globk * 1200,
        10, 10, .016, Math.ceil(10 / window.globk));
+	   let wave =findWaveLength(timeDomainData, window.globk * 24, window.globk * 1200,
+			10, 10, .016, Math.ceil(10 / window.globk))
+
+	   noteMusic =findNote(e)
+	   console.log()
+  console.log("Frecuencia: "+e+" hz and wave --> "+ wave)
+ console.log("Nota: "+noteArray[noteMusic]) 
 
 if (e > 0) {
 		measurements.push([e, findNote(e)]), measurements.length > measureLength && (measurements = measurements.slice(measurements.length - measureLength));
@@ -121,9 +128,7 @@ if (e > 0) {
 		}) / u.length)
 	}
 
-noteMusic =findNote(e)
-  console.log("Frecuencia: "+e+" hz")
- console.log("Nota: "+noteArray[noteMusic])  
+ 
 
 }
 

@@ -19,7 +19,8 @@ const findWaveLength = (e, r, t, o, n, a, i)=> {
 	} 
 	if (a > A / t) return -1;
 	if (0 === w || w === t) return -1;
-	for (var C = 0, D = 0, v = 0, y = 0, p = 0, T = 0, F = 0, b = 0, k = 0, d = r; t >= d; d++)  
+	for (var C = 0, D = 0, v = 0, y = 0, p = 0, T = 0, F = 0, b = 0, k = 0, d = r; t >= d; d++)
+	{ 
 		F = 0 
 		b = 0 
 		C = 0 
@@ -47,7 +48,9 @@ const findWaveLength = (e, r, t, o, n, a, i)=> {
 		} 
 		 b++
 		 b >= n && (N = g);
-		F += C * D / b
+		
+	}
+	F += C * D / b
 	    F /= b
 	    if(F > v){
 			v = F
@@ -116,13 +119,13 @@ let  timeDomainData = new Float32Array(analizador.fftSize)
 
 	//console.log(Hz) }, 1000);
   const marcoespectro2 = setInterval(()=>{
+	  analizador.getFloatTimeDomainData(timeDomainData)
 	let   Hz = bitCounter / findWaveLength(timeDomainData, window.globk * 24, window.globk * 1200,
 		10, 10, .016, Math.ceil(10 / window.globk));
 		let wave =findWaveLength(timeDomainData, window.globk * 24, window.globk * 1200,
 			10, 10, .016, Math.ceil(10 / window.globk))
- 
+ console.log()
 		console.log("hz --> "+Hz)
-		console.log("bitcounter ---> "+bitCounter)
 		console.log("wave ---> "+wave)
   }, 1500);
 	//marcoespectro = setInterval(dibujaEspectro, 20);
