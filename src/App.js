@@ -1,42 +1,28 @@
-import './App.css';
+import React from "react";
+import "./App.css";
 //import React, { useState} from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-//React Redux 
-import { Provider } from "react-redux";
-import store from "./helpers/redux/store";
 
-import Tuner from "./components/Tuner/MainTuner"
-import Trastes from './components/TrastesGuitarra/Trastes';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Componentes
-
+import Layout from "./components/Menu/Layout";
+import Home from "./pages/Home";
+import Tuner from "./pages/Tuner";
+import NotFound from "./pages/NotFound";
 
 function App() {
-
-  //const [show, setShow] = useState(false);
-
- 
-
   return (
-    <Provider store={store}>
-    <div className="App container-fluid">
-    <div className="row">
-    <div className="col-12">
-    <h1>Tuner</h1>
-    </div>
-    </div>
-    <div className="row TunerAndGuitar">
-    <div className="col-3">
-    <Tuner />
-    </div>
-    <div className="col-9">
-    <Trastes />
-    </div>
-    </div>
-
-    </div>
-    </Provider>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/tuner" element={<Tuner/>} />
+          <Route component={NotFound} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

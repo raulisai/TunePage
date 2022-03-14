@@ -10,20 +10,13 @@ class PrintNote extends React.Component {
     super(props);
   }
 
-  
-
-
-
-
-
   render() {
     return (
       <>
       <div className="MainBoxTuner">
       <div className="NoteInLetters m-5">
-      <h4 className="Note SetingMainNote">F</h4>
-      <h5 className="OctavaOfNote SetingMainNote">4</h5>
-      <span className="KeyBlack SetingMainNote">#</span>
+      <h4 className="Note SetingMainNote">{this.props.notaMusic}</h4>
+    
       </div>
       </div>
 

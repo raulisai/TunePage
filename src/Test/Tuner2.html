@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -80,48 +79,10 @@ function findWaveLength(e, r, t, o, n, a, i) {
 	for (var C = 0, D = 0, v = 0, y = 0, p = 0, T = 0, F = 0, b = 0, k = 0, d = r; t >= d; d++) {
 		F = 0, b = 0, C = 0, D = 0;
 		for (var N = w; g > N; N += d) F += s[N], 0 != b && g - 5 * i > N && (k = s[N] / s[w], k > 0 && (k > 1 && (k = 1), u = s[N], l = s[N - 5 * i], c = s[N + 5 * i], s[w] >= 0 ? u > c && u > l && (C += k * k * k * k * s[w] * o * (t - d) / t, D++) : c > u && l > u && (C += k * k * k * k * s[w] * o * (t - d) / t, D++))), b++, b >= n && (N = g);
-		F += C * v  D / b, F /= b, F > v ? (v = F, p = d) : y > F && (y = F, T = d), f.push(F)
+		F += C * D / b, F /= b, F > v ? (v = F, p = d) : y > F && (y = F, T = d), f.push(F)
 	}
 	return s[w] >= 0 ? p / i : T / i
 }
-
-/*
-'use strict';
-var N = w;
-for (; g > N; N = N + d) {
- F = F + s[N];
- if (0 != b && g - 5 * i > N) {
-   k = s[N] / s[w];
-   if (k > 0) {
-     if (k > 1) {
-       k = 1;
-     }
-     u = s[N];
-     l = s[N - 5 * i];
-     c = s[N + 5 * i];
-     if (s[w] >= 0) {
-       if (u > c && u > l) {
-         C = C + k * k * k * k * s[w] * o * (t - d) / t;
-         D++;
-       }
-     } else {
-       if (c > u && l > u) {
-         C = C + k * k * k * k * s[w] * o * (t - d) / t;
-         D++;
-       }
-     }
-   }
- }
- b++;
- if (b >= n) {
-   N = g;
- }
-}
-;
-
-*/
-
-
 function findNote(e) {
 	if (254.285 >= e) {
 		if (89.903 >= e) {
