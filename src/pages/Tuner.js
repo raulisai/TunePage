@@ -1,10 +1,9 @@
-import React, { Component,useState  } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
 
 import "./styles/Home.css";
 
 import Tuner from "../components/Tuner/Nota";
-import Trastes from "../components/TrastesGuitarra/Trastes";
+import Trastes from "../components/TrastesInstrument/Trastes";
 
 //React Redux
 import { Provider } from "react-redux";
@@ -37,7 +36,7 @@ export default class Home extends Component {
       s.push(e[e.length - 1]);
       r *= i;
       t *= i;
-      for (var g = s.length, f = [], h = 0, w = 0, A = 0, d = 0; t > d; d++) {
+      for (var g = s.length, f = [], h = 0, w = 0, A = 0; t > d; d++) {
         if (Math.abs(s[d]) > h) {
           w = d;
           h = Math.abs(s[d]);
@@ -332,7 +331,7 @@ export default class Home extends Component {
             0.016,
             Math.ceil(10 / window.globk)
           );
-        let wave = findWaveLength(
+        /*let wave = findWaveLength(
           timeDomainData,
           window.globk * 24,
           window.globk * 1200,
@@ -340,7 +339,7 @@ export default class Home extends Component {
           10,
           0.016,
           Math.ceil(10 / window.globk)
-        );
+        ); */
         let noteMusic = findNote(Hz);
         this.setState({ Nota: noteArray[noteMusic]  })
        // console.log("hz --> " + Hz);
@@ -350,7 +349,7 @@ export default class Home extends Component {
         {
             clearInterval(InicializarInterval);
         }
-      }, 1500);
+      }, 1000);
 
       return Hz;
     };
@@ -418,11 +417,11 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="row TunerAndGuitar">
-            <div className="col-3">
+            <div className="col-1">
               <Tuner 
               notaMusic= {this.state.Nota}/>
             </div>
-            <div className="col-9">
+            <div className="col-11">
               <Trastes />
             </div>
           </div>

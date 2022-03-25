@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/Navbar.css';
-//import logo from '../images/logo.svg';
+import './css/Navbar.css';
+import logo from '../../img/logoDjokerSinFondo.svg';
 
 class Navbar extends React.Component {
   render() {
@@ -10,9 +10,12 @@ class Navbar extends React.Component {
       <div className="Navbar">
         <div className="container-fluid">
           <Link className="Navbar__brand" to="/">
-            <img className="Navbar__brand-logo" src="" alt="Logo" />
-            <span className="font-weight-light">Platzi</span>
-            <span className="font-weight-bold">Conf</span>
+            <img className="Navbar__brand-logo" src={logo} alt="Logo" />
+            <span className="font-weight-light">Home</span>
+            <span className="font-weight-bold">Music</span>
+          </Link>
+          <Link className="Navbar__brand" to="tuner">
+            <span className="font-weight-bold">Tuner</span>
           </Link>
         </div>
       </div>
