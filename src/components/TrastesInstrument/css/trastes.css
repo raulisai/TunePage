@@ -35,6 +35,20 @@ label {
     margin-left: 5%;
     
 }
+
+.note-simb-hiden{
+
+opacity: 0;
+
+}
+
+.note-simb-active{
+    opacity: 1;
+    background-color:rgb(8, 26, 43) ; 
+    width: 60%;
+    border-radius: 20%;
+    z-index: 1; 
+    }
 .string {
     width: 100%;
     height: 100%;
