@@ -1,3 +1,11 @@
+ @font-face {
+     font-family: quartz;
+     src: url(../../../fonts/quartz.ttf);
+ }
+ *{
+     font-family: "quartz";
+ }
+ 
  .SetingMainNote {
     float: left;
     font-family:"Tourney","Fuggles","Uchen";
@@ -5,9 +13,9 @@
 }
 .MainBoxTuner{
    /* UI Properties */
-    background: rgba(0, 0, 0, 0.91) 0% 0% no-repeat padding-box;
+    background: #161515 0% 0% no-repeat padding-box;
     opacity: 1;
-    border: 5.5px solid rgba(230, 224, 224, 0.089);
+    border: 7.5px solid rgba(230, 224, 224, 0.089);
     height:310px;
     width:310px;
     border-radius: 50%;
@@ -18,13 +26,17 @@
 
 }
 .Note {
-    font-size:4rem;
-    font-family:"Quartz";
+    font-size:3.5rem;
+    font-family:"quartz";
     display:inline-flex;
-    margin-left: 23%;
-    margin-top:30%;
+    margin-left: 38%;
+    margin-top:20%;
      
     
+}
+.TetxOctv{
+    font-size:2rem;
+    margin-top:60%;
 }
 
 .NoteLeft{
@@ -52,27 +64,78 @@ margin-top: -30px;
 }
 
 .TetxHz{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .MarcoLeft{
-    width: 140px;
+    background-color: #D46301;
+    width: 130px;
     height: 150px;
     margin-top:45%;
-    margin-left: -19%;
+    margin-left: -13%;
     border-bottom: 3px solid rgba(45, 206, 24, 0.986);
     border-left: 3px solid rgba(45, 206, 24, 0.986);
     border-bottom-left-radius:400px 400px;
     
 }
 .MarcoRight{
-    width: 140px;
+    background-color: #161515;
+    width: 130px;
     height: 150px;
-    margin-top:-73.5%;
+    margin-top:-74%;
     margin-left:50%;
     border-bottom: 3px solid rgba(45, 206, 24, 0.986);
     border-right: 3px solid rgba(45, 206, 24, 0.986);
     border-bottom-right-radius:400px 400px;
-    
-   
-    
+}
+.MarcoLeftInternal{
+    background-color: #161515;
+    width:110px;
+    height:130px;
+    border-bottom-left-radius:400px 400px;
+    margin-left: 15px;
+}
+.MarcoRightInternal{
+    background-color: #161515;
+    width:110px;
+    height:130px;
+    border-bottom-right-radius:400px 400px;
+}
+.lineCentral{
+    background-color: rgba(45, 206, 24, 0.986);
+    width:8px;
+    height:35px;
+   margin-left: 50%;
+   margin-top:-30px;
+}
+.line1{
+    background-color: rgba(45, 206, 24, 0.986);
+    width:3px;
+    height:30px;
+    margin-left: -9%;
+    margin-top:-110px;
+    transform: rotate(50deg);
+}
+.line2{
+    background-color: rgba(45, 206, 24, 0.986);
+    width:3px;
+    height:30px;
+    margin-left: 15%;
+    margin-top:30px;
+    transform: rotate(40deg);
+}
+.line3{
+    background-color: rgba(45, 206, 24, 0.986);
+    width:3px;
+    height:30px;
+    margin-left: 90%;
+    margin-top:-40px;
+    transform: rotate(130deg);
+}
+.line4{
+    background-color: rgba(45, 206, 24, 0.986);
+    width:3px;
+    height:30px;
+    margin-left: 108%;
+    margin-top:-86px;
+    transform: rotate(120deg);
 }
