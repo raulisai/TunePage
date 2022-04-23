@@ -29,10 +29,12 @@ label {
     display: flex;
     flex-direction: column;
     background: #080602c4  url(../../../img/wood-pattern.png);
-    width: 90%;
+    width: 85%;
     min-width: 1500px;
-    height: 90%;
-    margin-left: 5%;
+    height: 80%;
+    margin-left: 8%;
+    margin-top: 0.5%;
+    
     
 }
 

@@ -17,7 +17,10 @@ export default class Home extends Component {
     this.state = {
       data: [],
       Activo: false,
-      Nota: String
+      Nota: String,
+      NotaLeft: String,
+      NotaRight: String,
+      Hz : String
     };
   }
 
@@ -168,7 +171,7 @@ export default class Home extends Component {
         [1281.5, 1357.7],
         [1357.7, 1438.45],
         [1438.45, 1524],
-        [1524, 1614.6],
+        [1524, 1614.6], 
         [1614.6, 1710.6],
         [1710.6, 1812.35],
         [1812.35, 1920.1],
@@ -339,7 +342,7 @@ export default class Home extends Component {
           Math.ceil(10 / window.globk)
         ); */
         let noteMusic = findNote(Hz);
-        this.setState({ Nota: noteArray[noteMusic]  })
+        this.setState({ Nota: noteArray[noteMusic], Hz: Number.parseFloat(Hz).toFixed(2) , NotaLeft:noteArray[noteMusic+1], NotaRight: noteArray[noteMusic-1] })
        // console.log("hz --> " + Hz);
         //console.log("wave ---> " + wave);
         //console.log("Nota: " + noteArray[noteMusic]);
@@ -396,19 +399,19 @@ export default class Home extends Component {
             <div className="col-4">
               <button
                 type="button"
-                class="btn btn-success"
+                className="btn btn-success"
                 onClick={() => this.start()}
               >
                 Activar
               </button>
             </div>
             <div className="col-4">
-              <button type="button" class="btn btn-info">
+              <button type="button" className="btn btn-info">
                 Settings
               </button>
             </div>
             <div className="col-4">
-              <button type="button" class="btn btn-danger" 
+              <button type="button" className="btn btn-danger" 
               onClick={() => this.setState({ Activo: !this.state.Activo  })}>
                 stop
               </button>
@@ -417,7 +420,10 @@ export default class Home extends Component {
           <div className="row TunerAndGuitar">
             <div className="col-1">
               <Tuner 
-              notaMusic= {this.state.Nota}/>
+              notaMusic= {this.state.Nota}
+              Hz= {this.state.Hz}
+              NotaLeft={this.state.NotaLeft}
+              NotaRight={this.state.NotaRight}/>
             </div>
             <div className="col-11">
               <Trastes notaMusic= {this.state.Nota}/>

@@ -15,8 +15,12 @@ class PrintNote extends React.Component {
       <>
       <div className="MainBoxTuner">
       <div className="NoteInLetters m-5">
-      <h4 className="Note SetingMainNote">{this.props.notaMusic}</h4>
-    
+      <h5 className="Hz">122<span className="TetxHz">Hz</span></h5>
+      <h5 className="NoteLeft">D#1</h5>
+      <h4 className="Note SetingMainNote">C#1</h4>
+      <h5 className="NoteRight">C#2</h5>
+      <div className="MarcoLeft"></div>
+      <div className="MarcoRight"></div>
       </div>
       </div>
 

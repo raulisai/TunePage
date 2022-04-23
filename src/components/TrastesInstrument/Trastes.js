@@ -1,12 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
 
-
 import "./css/trastes.css";
-
-
-
-//import {GetWaveInHz} from '../../helpers/redux/reducers/actionTuner/GetWaveInHz'
 
 function Trastes(props) {
   //constantes
@@ -65,10 +60,8 @@ function Trastes(props) {
     }
     return noteName;
   }
-
-
   for (let i = 0; i < numberOfStrings; i++) {
-    let note=props.notaMusic != undefined ? props.notaMusic : " "
+    let note=props.notaMusic !== undefined ? props.notaMusic : " "
     let noteclean= note.toString().substr(0, note.length - 1)
     noteFret = [];
 
@@ -105,7 +98,7 @@ function Trastes(props) {
               {noteName}
             </div>
           </div>
-        );
+        ); 
       }
     }
 

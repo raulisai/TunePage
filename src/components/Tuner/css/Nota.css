@@ -1,14 +1,15 @@
-.SetingMainNote {
+ .SetingMainNote {
     float: left;
     font-family:"Tourney","Fuggles","Uchen";
     color:rgba(64, 255, 64, 0.63);
 }
 .MainBoxTuner{
-    background-color:rgba(5, 3, 3, 0.877);
-    border: 1.5px solid;
-    border-color:green;
-    height:280px;
-    width:280px;
+   /* UI Properties */
+    background: rgba(0, 0, 0, 0.91) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 5.5px solid rgba(230, 224, 224, 0.089);
+    height:310px;
+    width:310px;
     border-radius: 50%;
     margin-left: -5%;
     margin-top: -25%;
@@ -17,15 +18,61 @@
 
 }
 .Note {
-    font-size:6rem;
- 
+    font-size:4rem;
+    font-family:"Quartz";
+    display:inline-flex;
+    margin-left: 23%;
+    margin-top:30%;
+     
+    
+}
+
+.NoteLeft{
+
+    display: inline-flex;
+    margin-top: 25%;
+    margin-left:-40px;
+    float: left;
+    font-size: 1.5rem;
+    
+}
+
+.NoteRight{
+    float: right;
+    display:inline-flex;
+    margin-top: 25%;
+    margin-right: -40px;
+    font-size: 1.5rem;
+
 
 }
-.OctavaOfNote {
-    font-size:5rem;
-   }
+
+.Hz{
+margin-top: -30px;
+}
+
+.TetxHz{
+    font-size: 1rem;
+}
+.MarcoLeft{
+    width: 140px;
+    height: 150px;
+    margin-top:45%;
+    margin-left: -19%;
+    border-bottom: 3px solid rgba(45, 206, 24, 0.986);
+    border-left: 3px solid rgba(45, 206, 24, 0.986);
+    border-bottom-left-radius:400px 400px;
+    
+}
+.MarcoRight{
+    width: 140px;
+    height: 150px;
+    margin-top:-73.5%;
+    margin-left:50%;
+    border-bottom: 3px solid rgba(45, 206, 24, 0.986);
+    border-right: 3px solid rgba(45, 206, 24, 0.986);
+    border-bottom-right-radius:400px 400px;
+    
    
-.KeyBlack {
-    font-size:4rem;
-   }
-   
+    
+}
