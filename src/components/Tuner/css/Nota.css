@@ -1,3 +1,8 @@
+ :root{
+     --heigh-barra :150px;
+ }
+ 
+ 
  @font-face {
      font-family: quartz;
      src: url(../../../fonts/quartz.ttf);
@@ -67,7 +72,10 @@ margin-top: -30px;
     font-size: 0.8rem;
 }
 .MarcoLeft{
-    background-color: #D46301;
+   background: url(../../../img/degradadoNaranja.jpg);
+   background-position:center bottom;
+   background-repeat: no-repeat;
+  
     width: 130px;
     height: 150px;
     margin-top:45%;
@@ -78,10 +86,12 @@ margin-top: -30px;
     
 }
 .MarcoRight{
-    background-color: #161515;
+    background: url(../../../img/degradadoNaranja.jpg);
+    background-position:center bottom;
+    background-repeat: no-repeat;
     width: 130px;
     height: 150px;
-    margin-top:-74%;
+    margin-top:-75%;
     margin-left:50%;
     border-bottom: 3px solid rgba(45, 206, 24, 0.986);
     border-right: 3px solid rgba(45, 206, 24, 0.986);
@@ -102,7 +112,7 @@ margin-top: -30px;
 }
 .lineCentral{
     background-color: rgba(45, 206, 24, 0.986);
-    width:8px;
+    width:7px;
     height:35px;
    margin-left: 50%;
    margin-top:-30px;
