@@ -11,7 +11,7 @@ import Trastes from "../components/TrastesInstrument/Trastes";
 import { Provider } from "react-redux";
 import store from "../helpers/redux/store";
 
-export default class PTuner extends Component {
+export default class Composition extends Component {
   constructor(props) {
     super(props);
     this.state = {
