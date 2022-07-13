@@ -36,13 +36,13 @@ function Trastes(props) {
     "B",
   ];
   const instrumentTuningPresets = {
-    Guitar: [4, 11, 7, 2, 9, 4],
-    "Bass (4 strings)": [7, 2, 9, 4],
+    "Guitar": [4, 11, 7, 2, 9, 4],
     "Bass (5 strings)": [7, 2, 9, 4, 11],
-    Ukulele: [9, 4, 0, 7],
+    "violin": [7, 2, 9, 4],
+    "cello": [9, 4, 0, 7],
   };
 
-  let numberOfFrets = 19;
+  let numberOfFrets = 11;
   let accidentals = "sharps";
   let selectedInstrument = "Guitar";
   let numberOfStrings = instrumentTuningPresets[selectedInstrument].length;

@@ -7,9 +7,7 @@
      font-family: quartz;
      src: url(../../../fonts/quartz.ttf);
  }
- *{
-     font-family: "quartz";
- }
+
  
  .SetingMainNote {
     float: left;
@@ -19,14 +17,15 @@
 .MainBoxTuner{
    /* UI Properties */
     background: #161515 0% 0% no-repeat padding-box;
+    font-family: "quartz";
     opacity: 1;
     border: 7.5px solid rgba(230, 224, 224, 0.089);
     height:310px;
     width:310px;
     border-radius: 50%;
-    margin-left: -5%;
-    margin-top: -25%;
-    margin-bottom: -20%;
+    margin-top:90%;
+    z-index: 50;
+   
 
 
 }

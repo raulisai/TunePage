@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './css/Navbar.css';
-import logo from '../../img/logoDjokerSinFondo.svg';
+import logoHome from '../../img/LogoBlanco.png';
+import ImgTuner from '../../img/Afinador.svg';
+import ImgMetronomo from '../../img/Metromo-Blanco-SVG.svg';
+import ImgCompon from '../../img/Composición2.png';
+
 
 class Navbar extends React.Component {
   render() {
@@ -10,13 +14,22 @@ class Navbar extends React.Component {
       <div className="Navbar">
         <div className="container-fluid">
           <Link className="Navbar__brand" to="/">
-            <img className="Navbar__brand-logo" src={logo} alt="Logo" />
-            <span className="font-weight-light">Home</span>
-            <span className="font-weight-bold">Music</span>
+            <img className="Navbar__brand-logo" src={logoHome} alt="Logo" />
+            <span className="font-weight-light">Introduccion </span>
+            <span className="font-weight-bold">Musical</span>
           </Link>
           <Link className="Navbar__brand" to="tuner">
-            <span className="font-weight-bold">Tuner</span>
+          <img className="Navbar__brand-logo" src={ImgTuner} alt="Logo" />
+            <span className="font-weight-bold">Afinador</span>
           </Link>
+          <Link className="Navbar__brand" to="metronome">
+          <img className="Navbar__brand-logo" src={ImgMetronomo} alt="Logo" />
+          <span className="font-weight-bold">Metronomo</span>
+        </Link>
+        <Link className="Navbar__brand" to="composition">
+        <img className="Navbar__brand-logo" src={ImgCompon} alt="Logo" />
+        <span className="font-weight-bold">Composicion</span>
+      </Link>
         </div>
       </div>
     );

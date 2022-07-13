@@ -12,10 +12,6 @@ class PrintNote extends React.Component {
     super(props);
     
   }
- 
-  
- 
-  
 
   render() {
     console.log(`130px ${this.props.levelPositivoNote}px`)

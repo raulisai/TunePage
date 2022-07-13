@@ -1,0 +1,83 @@
+
+.Instrument-select-guitar {
+    background-image: url("./../../img/Instrumentos/Guitarra-Mod.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    
+  
+  }
+
+  .Secction-Principal{
+    height: 90%;
+  }
+
+ .seccionButton{
+  margin-top: 10%;
+  }
+
+ .btn-inicio{
+  --glow-color: rgb(202, 194, 209);
+  --glow-spread-color: rgba(193, 184, 201, 0.747);
+  --enhanced-glow-color: rgb(207, 199, 214);
+  --btn-color: rgb(158, 149, 167);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: #394f55;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+  border-width: 3px;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 15%;
+ }
+ .btn-inicio:hover {
+  background-color: #3368adc2;
+  box-shadow: 0px 15px 20px rgba(46, 80, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn-inicio:active {
+  transform: scale(2.5);
+}
+ 
+ .img-button{
+  width: 160%;
+  margin-left: -25%;
+ }
+ .btn-instrument{
+
+  border-radius: 40%;
+  width: 50px;
+  height: 50px;
+  background-color: #41656d67;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 15%;
+  display: inline-block
+ }
+ .btn-instrument:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn-instrument:active {
+  transform: translateY(-1px);
+}
+ .seccionInstuments{
+width: 60%;
+height: 90%;
+margin-left: 3%;
+opacity: 100;
+ }
+ .seccionInstumentsOcult{
+  width: 60%;
+  height: 90%;
+  margin-left: 3%;
+  opacity: 0;
+   }
