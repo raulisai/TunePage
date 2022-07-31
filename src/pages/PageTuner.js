@@ -13,10 +13,10 @@ import store from "../helpers/redux/store";
 import findWaveLength from "../helpers/services/FindWaveLength";
 import findNote from "../helpers/services/FindNote";
 
-import ImgButtOff from '../img/Boton_Encendido-Apagado.svg'
-import ImgButtSettings from '../img/Ajustes.svg'
+import ImgButtOff from '../img/Boton_Encendido-Apagado.png'
+import ImgButtSettings from '../img/Ajustes.png'
 import ImgButtInstruments from '../img/Instrumentos2.png'
-import ImgButtMicrofono from '../img/Microfono.svg'
+import ImgButtMicrofono from '../img/Microfono.png'
 import ImgButtBajo from '../img/Bajo.png'
 import ImgButtGuitar from '../img/Guitarra.png'
 import ImgButtCello from '../img/Cello.png'

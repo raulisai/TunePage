@@ -46,9 +46,10 @@
  
  .img-button{
   width: 160%;
-  margin-left: -25%;
+  margin-left: -28%;
+  filter: contrast(100%) brightness(90%);
  }
- .btn-instrument{
+ .btn-instrument{ 
 
   border-radius: 40%;
   width: 50px;

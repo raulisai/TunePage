@@ -58,7 +58,7 @@ opacity: 0;
 .string:before {
     content: '';
     width: 100%;
-    height: calc(var(--string-height) * 1px);
+    height: calc(var(--string-height) * .8px);
     background: linear-gradient(#eee, #999);
     box-shadow: 76px 3px 10px #806233;
     z-index: 1;

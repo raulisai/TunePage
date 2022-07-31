@@ -42,7 +42,7 @@ function Trastes(props) {
     "cello": [9, 4, 0, 7],
   };
 
-  let numberOfFrets = 11;
+  let numberOfFrets = 14;
   let accidentals = "sharps";
   let selectedInstrument = "Guitar";
   let numberOfStrings = instrumentTuningPresets[selectedInstrument].length;
