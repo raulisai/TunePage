@@ -13,13 +13,14 @@ import store from "../helpers/redux/store";
 import findWaveLength from "../helpers/services/FindWaveLength";
 import findNote from "../helpers/services/FindNote";
 
-import ImgButtOff from '../img/Boton_Encendido-Apagado.svg'
-import ImgButtSettings from '../img/Ajustes.svg'
-import ImgButtInstruments from '../img/Instrumentos2.png'
-import ImgButtMicrofono from '../img/Microfono.svg'
-import ImgButtBajo from '../img/Bajo.png'
-import ImgButtGuitar from '../img/Guitarra.png'
-import ImgButtCello from '../img/Cello.png'
+import ImgButtOff from "../img/ButtonOn.png";
+import ImgButtSettings from "../img/AjustesBlanco.png";
+import ImgButtInstruments from "../img/Instrumentos2.png";
+import ImgButtMicrofono from "../img/MicrofonoBlanco.png";
+import ImgButtBajo from "../img/Bajo.png";
+import ImgButtGuitar from "../img/Guitarra.png";
+import ImgButtCello from "../img/Cello.png";
+import Pentagrama from "../img/Pentagrama.svg"
 
 export default class PageTuner extends Component {
   constructor(props) {
@@ -34,11 +35,10 @@ export default class PageTuner extends Component {
       noteMusicBuffer: 6,
       LevelPositivoNote: 0,
       LevelNegativeNote: 0,
-      ButInstStatus: true
+      ButInstStatus: true,
     };
-    
   }
-  ButInstuments = 'row seccionInstumentsOcult';
+  ButInstuments = "row seccionInstumentsOcult";
 
   start = () => {
     this.setState({ Activo: true });
@@ -161,25 +161,21 @@ export default class PageTuner extends Component {
       }
     }
   };
-  selectInstrument= () =>{
-    this.setState({ButInstStatus: !this.state.ButInstStatus})
+  selectInstrument = () => {
+    this.setState({ ButInstStatus: !this.state.ButInstStatus });
 
-
-    if(this.state.ButInstStatus){
-      this.ButInstuments = 'row seccionInstuments';
-    }else{
-      this.ButInstuments = 'row seccionInstumentsOcult';
+    if (this.state.ButInstStatus) {
+      this.ButInstuments = "row seccionInstuments";
+    } else {
+      this.ButInstuments = "row seccionInstumentsOcult";
     }
-    
-  }
-  changeInstument= () =>{
-  }
-  
+  };
+  changeInstument = () => {};
+
   render() {
-    
     return (
       <Provider store={store}>
-        <div className="App container-fluid">
+        <div className="App container-fluid principal-conteiner">
           <div className="row">
             <div className="col-12">
               <h1>Tuner</h1>
@@ -187,112 +183,129 @@ export default class PageTuner extends Component {
           </div>
           <div className="row Secction-Principal">
             <div className="col-md-2 ">
-            <div  className="seccionButton">
-            <div className={this.ButInstuments}>
-            <button
-                type="button"
-                className="btn btn-instrument"
-                onClick={() => this.changeInstument()}
-                disabled={this.state.ButInstStatus}
-              >
-              <img 
-              src={ImgButtBajo}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              <button
-                type="button"
-                className="btn btn-instrument"
-                onClick={() => this.changeInstument()}
-                disabled={this.state.ButInstStatus}
-              >
-              <img 
-              src={ImgButtGuitar}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              <button
-                type="button"
-                className="btn btn-instrument"
-                onClick={() => this.changeInstument()}
-                disabled={this.state.ButInstStatus}
-              >
-              <img 
-              src={ImgButtCello}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              </div>
-            <div className="row">
-            <button
-                type="button"
-                className="btn btn-inicio"
-                onClick={() => this.selectInstrument()}
-              >
-              <img 
-              src={ImgButtInstruments}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              </div>
-              <div className="row">
-              <button
-                type="button"
-                className="btn btn-inicio"
-                onClick={() => this.start()}
-              >
-              <img 
-              src={ImgButtOff}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              <button
-                type="button"
-                className="btn btn-inicio"
-                onClick={() => this.start()}
-                
-              >
-              <img 
-              src={ImgButtMicrofono}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              </div>
-              <div className="row">
-              <button
-                type="button"
-                className="btn btn-inicio"
-                onClick={() => this.setState({ Activo: !this.state.Activo })}
-              >
-              <img 
-              src={ImgButtSettings}
-              alt="ImgButtonOfandON"
-              className="img-button"
-              /> 
-              </button>
-              </div>
+              <div className="seccionButton">
+                <div className={this.ButInstuments}>
+                  <button
+                    type="button"
+                    className="btn btn-instrument"
+                    onClick={() => this.changeInstument()}
+                    disabled={this.state.ButInstStatus}
+                  >
+                    <img
+                      src={ImgButtBajo}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-instrument"
+                    onClick={() => this.changeInstument()}
+                    disabled={this.state.ButInstStatus}
+                  >
+                    <img
+                      src={ImgButtGuitar}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-instrument"
+                    onClick={() => this.changeInstument()}
+                    disabled={this.state.ButInstStatus}
+                  >
+                    <img
+                      src={ImgButtCello}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                </div>
+                <div className="row">
+                  <button
+                    type="button"
+                    className="btn btn-inicio"
+                    onClick={() => this.selectInstrument()}
+                  >
+                    <img
+                      src={ImgButtInstruments}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                </div>
+                <div className="row">
+                  <button
+                    type="button"
+                    className="btn btn-inicio"
+                    onClick={() => this.start()}
+                  >
+                    <img
+                      src={ImgButtOff}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-inicio"
+                    onClick={() => this.start()}
+                  >
+                    <img
+                      src={ImgButtMicrofono}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                </div>
+                <div className="row">
+                  <button
+                    type="button"
+                    className="btn btn-inicio"
+                    onClick={() =>
+                      this.setState({ Activo: !this.state.Activo })
+                    }
+                  >
+                    <img
+                      src={ImgButtSettings}
+                      alt="ImgButtonOfandON"
+                      className="img-button"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div className="col-md-2">
-              <Tuner
-                notaMusic={this.state.Nota}
-                OctvNota={this.state.OctvNota}
-                Hz={this.state.Hz}
-                NotaLeft={this.state.NotaLeft}
-                NotaRight={this.state.NotaRight}
-                levelPositivoNote={this.state.LevelPositivoNote}
-                levelNegativeNote={this.state.LevelNegativeNote}
-              />
+            <div className="col-md-10 Instrument-select-guitar">
+            <div className="row seccion-inf">
+            <h3>informacion</h3>
+            
             </div>
-            <div className="col-md-8 Instrument-select-guitar">
-              <Trastes notaMusic={this.state.notaTraste} />
+              <div className="row seccion-instrument">
+                <div className="col-md-2 tuner">
+                  <Tuner
+                    notaMusic={this.state.Nota}
+                    OctvNota={this.state.OctvNota}
+                    Hz={this.state.Hz}
+                    NotaLeft={this.state.NotaLeft}
+                    NotaRight={this.state.NotaRight}
+                    levelPositivoNote={this.state.LevelPositivoNote}
+                    levelNegativeNote={this.state.LevelNegativeNote}
+                  />
+                </div>
+                <div className="col-md-10 trastes">
+                  <Trastes notaMusic={this.state.notaTraste} />
+                </div>
+              </div>
+              <div className="row">
+              <img
+                      src={Pentagrama}
+                      alt="ImgButtonOfandON"
+                      className="Pentagrama"
+                    />
+              
+              </div>
             </div>
           </div>
           <div className="row Secction-Partitura"></div>

@@ -18,8 +18,8 @@ export default class Home extends Component {
                 alt="Logo"
                 className="img-fluid mb-2"
               />
-
-              <h1>Herramientas musicales</h1>
+              <span className="">Herramientas musicales</span>
+              <h1>NOTE CATCH</h1>
               <Link className="btn btn-primary" to="/badges">
                 Start
               </Link>

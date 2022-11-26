@@ -1,9 +1,8 @@
 .App {
   text-align: center;
-  background-image: url("./img/FONDO.png");
   height: 100vh;
+  background-color:#E6ECF3 ;
   text-align: center;
-  color: white;
   margin:0;
   margin-top: 1.5;
   padding:0;

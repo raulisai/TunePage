@@ -1,8 +1,7 @@
 .Home {
   width: 100%;
   min-height: calc(100vh - 60px);
-  background-repeat: repeat;
-  color: #ffffff;
+  background-color:#E6ECF3 ;
   display: flex;
   align-items: center;
 }

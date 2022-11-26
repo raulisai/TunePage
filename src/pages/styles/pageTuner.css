@@ -1,4 +1,9 @@
+.principal-conteiner{
 
+  background-color:#E6ECF3 ;
+  height:47vw;
+
+}
 .Instrument-select-guitar {
     background-image: url("./../../img/Instrumentos/Guitarra-Mod.png");
     background-repeat: no-repeat;
@@ -7,7 +12,15 @@
     
   
   }
+.trastes{
 
+  padding-left: 5%;
+  
+  }
+.seccion-inf{
+
+  margin-bottom: 16%;
+}
   .Secction-Principal{
     height: 90%;
   }
@@ -15,27 +28,21 @@
  .seccionButton{
   margin-top: 10%;
   }
+  
 
  .btn-inicio{
-  --glow-color: rgb(202, 194, 209);
-  --glow-spread-color: rgba(193, 184, 201, 0.747);
-  --enhanced-glow-color: rgb(207, 199, 214);
-  --btn-color: rgb(158, 149, 167);
   border-radius: 100%;
   width: 60px;
   height: 60px;
-  background-color: #394f55;
-  box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
-  border-width: 3px;
+  background-color: #0B0B24;
+  box-shadow: 0px 15px 20px rgba(46, 80, 229, 0.4);
   margin-top: 15%;
   margin-right: 10%;
   margin-left: 15%;
  }
  .btn-inicio:hover {
-  background-color: #3368adc2;
-  box-shadow: 0px 15px 20px rgba(46, 80, 229, 0.4);
+  background-color: #FB854B;
+  box-shadow: 0px 15px 20px rgba(13, 170, 170, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
@@ -81,3 +88,12 @@ opacity: 100;
   margin-left: 3%;
   opacity: 0;
    }
+
+   .tuner{
+margin-top: -4%;
+
+   }
+.seccion-instrument{
+
+  margin-bottom: 5%;
+}
